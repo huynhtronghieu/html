@@ -1,0 +1,109 @@
+.intro {
+	position: relative;
+	overflow: hidden;
+
+	.intro-img {
+		@include w-h(100%, rem(730));
+
+		img {
+			overflow: hidden;
+		}
+
+		#myVideo {
+			position: absolute;
+			right: 0;
+			top: 0;
+			min-width: 100%;
+			min-height: 100%;
+		}
+	}
+
+	.intro-bg-overlap {
+		position: absolute;
+		top: 0;
+		left: 0;
+		@include w-h(100%, rem(730));
+
+		img {
+			overflow: hidden;
+		}
+	}
+
+	.intro-info {
+		position: absolute;
+		left: 50%;
+		top: 45%;
+		color: $color-white-0;
+		transform: translate(-50%, -50%);
+		text-align: center;
+
+		.intro-info__logo {
+			@include w-h(rem(200), 100%);
+			margin: auto;
+		}
+
+		p {
+			font-size: rem(24);
+			margin: rem(20) 0;
+		}
+
+		button {
+			padding: rem(2) rem(20);
+			font-size: rem(22);
+			background: rgba(0, 0, 0, 0.5);
+			color: $color-white-0;
+			border: none;
+			transition: 1s;
+
+			&:hover {
+				background: rgba(255, 255, 255, 1);
+				color: $color-black-1;
+			}
+		}
+	}
+
+	.arrow-down {
+		position: absolute;
+		top: 90%;
+		left: 50%;
+		transform: translate(-50%, 0);
+
+		a {
+			color: $color-white-0;
+		}
+	}
+
+}
+
+@media screen and (max-width: 768px) {
+	.intro {
+
+		.intro-img {
+			@include w-h(100%, rem(530));
+
+		}
+
+		.intro-bg-overlap {
+			@include w-h(100%, rem(530));
+		}
+
+		.intro-info {
+			.intro-info__logo {
+				@include w-h(rem(150), 100%);
+			}
+
+			p {
+				font-size: rem(18);
+			}
+
+			button {
+				font-size: rem(18);
+			}
+		}
+
+		.arrow-down {
+			top: 85%;
+		}
+
+	}
+}

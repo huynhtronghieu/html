@@ -1,0 +1,43 @@
+.title {
+	font-size: rem(40);
+	color: $color-black-1;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+img {
+	width: 100%;
+	height: 100%;
+}
+
+.btn-more {
+	font-size: rem(15);
+	padding: rem(3) rem(50);
+	background: $color-white-0;
+	border: rem(1) solid $color-black-1;
+	transition: 1s;
+
+	&:hover {
+		background: $color-black-1;
+		color: $color-white-0;
+	}
+
+	.fa-chevron-right {
+		font-size: rem(10);
+		margin-left: rem(5);
+	}
+}
+
+.content {
+	margin: rem(25) 0 rem(40) 0;
+}
+
+@media screen and (max-width: 768px) {
+	.title {
+		font-size: rem(24);
+	}
+
+	.content {
+		margin: rem(15) 0 rem(20) 0;
+	}
+}

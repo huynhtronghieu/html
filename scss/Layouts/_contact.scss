@@ -1,0 +1,91 @@
+#contact {
+	background: $color-black-1;
+	padding: rem(10) rem(250);
+	color: #9a9a9a;
+
+	.content {
+		display: flex;
+		justify-content: space-around;
+		text-align: center;
+
+		.title {
+			color: $color-white-0;
+			font-size: rem(36);
+		}
+
+		.email,
+		.call,
+		.find-us {
+			p {
+				margin-bottom: rem(5);
+			}
+
+			span {
+				display: inline-block;
+				margin: rem(10) 0;
+			}
+		}
+
+		.call {
+			span {
+				color: #577afb;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	#contact {
+		padding: rem(10) rem(90);
+
+		.content {
+			.title {
+				font-size: rem(36);
+			}
+
+			.email,
+			.call,
+			.find-us {
+				p {
+					margin-bottom: rem(3);
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	#contact {
+		padding: rem(10) rem(30);
+
+		.content {
+			.title {
+				font-size: rem(24);
+			}
+
+			.email,
+			.call,
+			.find-us {
+				p {
+					font-size: rem(14);
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 576px) {
+	#contact {
+		padding: rem(5);
+
+		.content {
+			flex-direction: column;
+
+			.email,
+			.call,
+			.find-us {
+				margin-bottom: rem(20);
+			}
+		}
+	}
+}

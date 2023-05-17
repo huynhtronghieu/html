@@ -1,0 +1,9 @@
+@mixin w-h($width, $height) {
+	width: $width;
+	height: $height;
+}
+
+// font-size px to rem
+@function rem($fs) {
+	@return ($fs / 16) * 1rem;
+}
